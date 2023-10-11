@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" contents="width=device width, initial-scale=1.0">
+    <title>Profile page - SocialBook</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <img src="logo.png" class="logo">
+            <ul>
+                <li><img src="notification.png"></li>
+                <li><img src="inbox.png"></li>
+                <li><img src="video.png"></li>
+            </ul>
+
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="search.png">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="profile-pic.png">
+            </div>
+        </div>
+
+        <div class="settings-menu">
+            <div id="dark-btn">
+                <span></span>
+            </div>
+
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="profile-pic.png">
+                    <div>
+                        <p>Joel Brooke</p>
+                        <a href="#">See Your Profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="feedback.png">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us Improve</a>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="settings-links">
+                    <img src="setting.png" class="settings-icon">
+                    <a href="#">Settings & Privacy <img src="arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="help.png" class="settings-icon">
+                    <a href="#">Help & Support <img src="arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="display.png" class="settings-icon">
+                    <a href="#">Display & Accessibility <img src="arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="logout.png" class="settings-icon">
+                    <a href="#">Logout <img src="arrow.png" width="10px"></a>
+                </div>
+
+            </div>
+            
+        </div>
+    </nav>
+
+    <div class="profile-container">
+        <img src="cover.png" class="cover-img">
+        <div class="profile-details">
+            <div class="pd-left">
+                <div class="pd-row">
+                    <img src="profile.png" class="pd-image">
+                    <div>
+                        <h3>Jake Williams</h3>
+                        <p>130 Friends - 35 mutual</p>
+                        <img src="member-1.png">
+                        <img src="member-2.png">
+                        <img src="member-3.png">
+                        <img src="member-5.png">
+                        <img src="member-6.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="pd-right">
+                <button type="button"><img src="add-friends.png"> Friend</button>
+                <button type="button"><img src="message.png"> Message</button>
+                <br>
+                <a href=""><img src="more.png"></a>
+            </div>
+        </div>
+
+        <div class="profile-info">
+            <div class="info-col"></div>
+            <div class="post-col">
+                <div class="write-post-container">
+                    <div class="user-profile">
+                        <img src="profile-pic.png">
+                        <div>
+                            <p>Joel Brooke</p>
+                            <small>Public <i class="fa-solid fa-caret-down"></i></small>
+                        </div>
+                    </div>
+                    <div class="post-input-container">
+                        <textarea rows="3" placeholder="What's on your mind, Joel?"></textarea>
+                        <div class="add-post-links">
+                            <a href="#"><img src="live-video.png"> Live Video</a>
+                            <a href="#"><img src="photo.png"> Photo/Video</a>
+                            <a href="#"><img src="feeling.png"> Feeling/Activity</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="profile-pic.png">
+                            <div>
+                                <p>Joel Brooke</p>
+                                <span>September 27 2023, 8:00 am</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                    </div>
+                    <p class="post-text">Join us at <span>@SocialBook</span> now! <a href="#">#SocialBook</a> <a href="#">#Connect</a> <a href="#">#Grow</a></p>
+                    <img src="feed-image-1.png" class="post-img">
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="like.png">3000</div>
+                            <div><img src="comments.png">2591</div>
+                            <div><img src="share.png">2103</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="member-1.png">
+                            <div>
+                                <p>Silica Adams</p>
+                                <span>October 5 2023, 3:06 pm</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                    </div>
+                    <p class="post-text">Invite your friends at <span>@SocialBook</span> now to connect and make this world a better place. <a href="#">#SocialBook</a> <a href="#">#Connect</a> <a href="#">#Grow</a></p>
+                    <img src="feed-image-2.png" class="post-img">
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="like-blue.png">2511</div>
+                            <div><img src="comments.png">2022</div>
+                            <div><img src="share.png">1950</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="member-2.png">
+                            <div>
+                                <p>Akshay Paul</p>
+                                <span>October 1 2023, 9:26 am</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                    </div>
+                    <p class="post-text">Connect now at <span>@SocialBook</span> <a href="#">#SocialBook</a> <a href="#">#Connect</a> <a href="#">#Grow</a></p>
+                    <img src="feed-image-3.png" class="post-img">
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="like-blue.png">2500</div>
+                            <div><img src="comments.png">1169</div>
+                            <div><img src="share.png">1003</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="member-3.png">
+                            <div>
+                                <p>Samantha Kapoor</p>
+                                <span>October 3 2023, 11:49 am</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                    </div>
+                    <p class="post-text">Make your own world and let others see it. Join <span>@SocialBook</span> now! <a href="#">#SocialBook</a> <a href="#">#Connect</a> <a href="#">#Grow</a></p>
+                    <img src="feed-image-4.png" class="post-img">
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="like.png">2631</div>
+                            <div><img src="comments.png">2130</div>
+                            <div><img src="share.png">1860</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="member-4.png">
+                            <div>
+                                <p>Jake Williams</p>
+                                <span>October 1 2023, 12:23 pm</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                    </div>
+                    <p class="post-text">Socialise now at <span>@SocialBook</span> <a href="#">#SocialBook</a> <a href="#">#Connect</a> <a href="#">#Grow</a></p>
+                    <img src="feed-image-5.png" class="post-img">
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="like-blue.png">1960</div>
+                            <div><img src="comments.png">1822</div>
+                            <div><img src="share.png">1800</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>Copyright 2023 - SocialBook</p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
